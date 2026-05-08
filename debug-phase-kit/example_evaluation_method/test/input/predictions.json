@@ -1,0 +1,323 @@
+[
+    {
+        "pk": "da25ce69-a9e2-4ff1-8b59-33c7dacd580b",
+        "inputs": [
+            {
+                "socket": {
+                    "slug": "visual-context-question",
+                    "relative_path": "visual-context-question.json",
+                    "example_value": "Example String",
+                    "is_image_kind": false,
+                    "is_panimg_kind": false,
+                    "is_dicom_image_kind": false,
+                    "is_json_kind": true,
+                    "is_file_kind": false
+                },
+                "file": null,
+                "image": null,
+                "value": "Example String"
+            },
+            {
+                "socket": {
+                    "slug": "histopathology-region-of-interest-thumbnail",
+                    "relative_path": "histopathology-region-of-interest-thumbnail.jpeg",
+                    "is_image_kind": false,
+                    "is_panimg_kind": false,
+                    "is_dicom_image_kind": false,
+                    "is_json_kind": false,
+                    "is_file_kind": true
+                },
+                "file": "https://grand-challenge.org/media/some-link/histopathology-region-of-interest-thumbnail.jpeg",
+                "image": null,
+                "value": null
+            }
+        ],
+        "outputs": [
+            {
+                "socket": {
+                    "slug": "visual-context-response",
+                    "relative_path": "visual-context-response.json",
+                    "example_value": "Example String",
+                    "is_image_kind": false,
+                    "is_panimg_kind": false,
+                    "is_dicom_image_kind": false,
+                    "is_json_kind": true,
+                    "is_file_kind": false
+                },
+                "file": null,
+                "image": null,
+                "value": "Example String"
+            }
+        ],
+        "exec_duration": "PT22M17S",
+        "invoke_duration": null,
+        "status": "Succeeded"
+    },
+    {
+        "pk": "9727e57e-f937-40c8-8ad7-cfdb3adebb1c",
+        "inputs": [
+            {
+                "socket": {
+                    "slug": "visual-context-question",
+                    "relative_path": "visual-context-question.json",
+                    "example_value": "Example String",
+                    "is_image_kind": false,
+                    "is_panimg_kind": false,
+                    "is_dicom_image_kind": false,
+                    "is_json_kind": true,
+                    "is_file_kind": false
+                },
+                "file": null,
+                "image": null,
+                "value": "Example String"
+            },
+            {
+                "socket": {
+                    "slug": "histopathology-region-of-interest-thumbnail",
+                    "relative_path": "histopathology-region-of-interest-thumbnail.jpeg",
+                    "is_image_kind": false,
+                    "is_panimg_kind": false,
+                    "is_dicom_image_kind": false,
+                    "is_json_kind": false,
+                    "is_file_kind": true
+                },
+                "file": "https://grand-challenge.org/media/some-link/histopathology-region-of-interest-thumbnail.jpeg",
+                "image": null,
+                "value": null
+            }
+        ],
+        "outputs": [
+            {
+                "socket": {
+                    "slug": "visual-context-response",
+                    "relative_path": "visual-context-response.json",
+                    "example_value": "Example String",
+                    "is_image_kind": false,
+                    "is_panimg_kind": false,
+                    "is_dicom_image_kind": false,
+                    "is_json_kind": true,
+                    "is_file_kind": false
+                },
+                "file": null,
+                "image": null,
+                "value": "Example String"
+            }
+        ],
+        "exec_duration": "PT22M17S",
+        "invoke_duration": null,
+        "status": "Succeeded"
+    },
+    {
+        "pk": "a5ef0e19-6432-4598-8fdd-5134a0de77cc",
+        "inputs": [
+            {
+                "socket": {
+                    "slug": "visual-context-question",
+                    "relative_path": "visual-context-question.json",
+                    "example_value": "Example String",
+                    "is_image_kind": false,
+                    "is_panimg_kind": false,
+                    "is_dicom_image_kind": false,
+                    "is_json_kind": true,
+                    "is_file_kind": false
+                },
+                "file": null,
+                "image": null,
+                "value": "Example String"
+            },
+            {
+                "socket": {
+                    "slug": "histopathology-region-of-interest-thumbnail",
+                    "relative_path": "histopathology-region-of-interest-thumbnail.jpeg",
+                    "is_image_kind": false,
+                    "is_panimg_kind": false,
+                    "is_dicom_image_kind": false,
+                    "is_json_kind": false,
+                    "is_file_kind": true
+                },
+                "file": "https://grand-challenge.org/media/some-link/histopathology-region-of-interest-thumbnail.jpeg",
+                "image": null,
+                "value": null
+            }
+        ],
+        "outputs": [
+            {
+                "socket": {
+                    "slug": "visual-context-response",
+                    "relative_path": "visual-context-response.json",
+                    "example_value": "Example String",
+                    "is_image_kind": false,
+                    "is_panimg_kind": false,
+                    "is_dicom_image_kind": false,
+                    "is_json_kind": true,
+                    "is_file_kind": false
+                },
+                "file": null,
+                "image": null,
+                "value": "Example String"
+            }
+        ],
+        "exec_duration": "PT22M17S",
+        "invoke_duration": null,
+        "status": "Succeeded"
+    },
+    {
+        "pk": "44b0bc20-2b09-4b7b-b866-dc687cbbb994",
+        "inputs": [
+            {
+                "socket": {
+                    "slug": "whole-slide-image",
+                    "relative_path": "images/whole-slide-image",
+                    "is_image_kind": true,
+                    "is_panimg_kind": true,
+                    "is_dicom_image_kind": false,
+                    "is_json_kind": false,
+                    "is_file_kind": false
+                },
+                "file": null,
+                "image": {
+                    "name": "the_original_filename_of_the_file_that_was_uploaded_or_image_set"
+                },
+                "value": null
+            }
+        ],
+        "outputs": [
+            {
+                "socket": {
+                    "slug": "chain-of-thought",
+                    "relative_path": "chain-of-thought.json",
+                    "example_value": [
+                        {
+                            "answer": "---",
+                            "question": "---",
+                            "next_question": "---"
+                        }
+                    ],
+                    "is_image_kind": false,
+                    "is_panimg_kind": false,
+                    "is_dicom_image_kind": false,
+                    "is_json_kind": true,
+                    "is_file_kind": false
+                },
+                "file": null,
+                "image": null,
+                "value": [
+                    {
+                        "answer": "---",
+                        "question": "---",
+                        "next_question": "---"
+                    }
+                ]
+            }
+        ],
+        "exec_duration": "PT22M17S",
+        "invoke_duration": null,
+        "status": "Succeeded"
+    },
+    {
+        "pk": "2ab6db5a-52f2-4338-88cf-b66ccb3ab9f1",
+        "inputs": [
+            {
+                "socket": {
+                    "slug": "whole-slide-image",
+                    "relative_path": "images/whole-slide-image",
+                    "is_image_kind": true,
+                    "is_panimg_kind": true,
+                    "is_dicom_image_kind": false,
+                    "is_json_kind": false,
+                    "is_file_kind": false
+                },
+                "file": null,
+                "image": {
+                    "name": "the_original_filename_of_the_file_that_was_uploaded_or_image_set"
+                },
+                "value": null
+            }
+        ],
+        "outputs": [
+            {
+                "socket": {
+                    "slug": "chain-of-thought",
+                    "relative_path": "chain-of-thought.json",
+                    "example_value": [
+                        {
+                            "answer": "---",
+                            "question": "---",
+                            "next_question": "---"
+                        }
+                    ],
+                    "is_image_kind": false,
+                    "is_panimg_kind": false,
+                    "is_dicom_image_kind": false,
+                    "is_json_kind": true,
+                    "is_file_kind": false
+                },
+                "file": null,
+                "image": null,
+                "value": [
+                    {
+                        "answer": "---",
+                        "question": "---",
+                        "next_question": "---"
+                    }
+                ]
+            }
+        ],
+        "exec_duration": "PT22M17S",
+        "invoke_duration": null,
+        "status": "Succeeded"
+    },
+    {
+        "pk": "e8b9c884-6c4d-4e4f-aa42-3a9cf6616913",
+        "inputs": [
+            {
+                "socket": {
+                    "slug": "whole-slide-image",
+                    "relative_path": "images/whole-slide-image",
+                    "is_image_kind": true,
+                    "is_panimg_kind": true,
+                    "is_dicom_image_kind": false,
+                    "is_json_kind": false,
+                    "is_file_kind": false
+                },
+                "file": null,
+                "image": {
+                    "name": "the_original_filename_of_the_file_that_was_uploaded_or_image_set"
+                },
+                "value": null
+            }
+        ],
+        "outputs": [
+            {
+                "socket": {
+                    "slug": "chain-of-thought",
+                    "relative_path": "chain-of-thought.json",
+                    "example_value": [
+                        {
+                            "answer": "---",
+                            "question": "---",
+                            "next_question": "---"
+                        }
+                    ],
+                    "is_image_kind": false,
+                    "is_panimg_kind": false,
+                    "is_dicom_image_kind": false,
+                    "is_json_kind": true,
+                    "is_file_kind": false
+                },
+                "file": null,
+                "image": null,
+                "value": [
+                    {
+                        "answer": "---",
+                        "question": "---",
+                        "next_question": "---"
+                    }
+                ]
+            }
+        ],
+        "exec_duration": "PT22M17S",
+        "invoke_duration": null,
+        "status": "Succeeded"
+    }
+]
