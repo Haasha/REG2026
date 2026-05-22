@@ -46,8 +46,13 @@ import json
 from pathlib import Path
 
 import SimpleITK
-import torch
 from PIL import Image
+
+try:
+    import torch
+    _TORCH_AVAILABLE = True
+except ImportError:
+    _TORCH_AVAILABLE = False
 
 INPUT_PATH = Path("/input")
 OUTPUT_PATH = Path("/output")
@@ -243,6 +248,10 @@ def load_image_file_as_array(*, location):
 
 def _show_torch_cuda_info():
     print("=+=" * 10)
+    if not _TORCH_AVAILABLE:
+        print("Torch not installed — skipping GPU info (CPU-only local test)")
+        print("=+=" * 10)
+        return
     print("Torch CUDA available:", (available := torch.cuda.is_available()))
     if available:
         print(f"  devices          : {torch.cuda.device_count()}")

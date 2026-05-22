@@ -1,5 +1,6 @@
-FROM --platform=linux/amd64 pytorch/pytorch:2.9.1-cuda12.6-cudnn9-runtime AS example_algorithm_amd64
-# Use a 'large' base container to show-case how to load pytorch and use the GPU (when enabled)
+﻿FROM --platform=linux/amd64 python:3.11-slim AS example_algorithm_amd64
+# Lightweight base for local testing. For GPU/submission swap back to:
+# FROM --platform=linux/amd64 pytorch/pytorch:2.9.1-cuda12.6-cudnn9-runtime AS example_algorithm_amd64
 
 # Ensures that Python output to stdout/stderr is not buffered: prevents missing information when terminating
 ENV PYTHONUNBUFFERED=1
@@ -21,3 +22,4 @@ RUN python -m pip install \
 COPY --chown=user:user inference.py /opt/app/
 
 ENTRYPOINT ["python", "inference.py"]
+

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 
 # Stop at first error
 set -e
@@ -73,6 +73,15 @@ docker volume create "$DOCKER_NOOP_VOLUME" > /dev/null
 
 trap cleanup EXIT
 
+# Use --gpus all only when the NVIDIA Container Runtime is available
+if docker run --rm --gpus all --platform=linux/amd64 alpine echo ok > /dev/null 2>&1; then
+  GPU_FLAG="--gpus all"
+  echo "=+= GPU runtime detected â€” enabling --gpus all"
+else
+  GPU_FLAG=""
+  echo "=+= No GPU runtime detected â€” running CPU-only"
+fi
+
 run_docker_forward_pass() {
     local interface_dir="$1"
 
@@ -82,12 +91,12 @@ run_docker_forward_pass() {
     # '--network none'
     #    entails there is no internet connection
     # '--gpus all'
-    #    enables access to any GPUs present
+    #    enables access to any GPUs present (only added when NVIDIA runtime is available)
     # '--volume <NAME>:/tmp'
     #   is added because on Grand Challenge this directory cannot be used to store permanent files
-    # '--volume ../model:/opt/ml/model/":ro'
+    # '--volume ../model:/opt/ml/model/:ro'
     #   is added to provide access to the (optional) tarball-upload locally
-    docker run --rm --gpus all \
+    docker run --rm $GPU_FLAG \
         --platform=linux/amd64 \
         --network none \
         --volume "${INPUT_DIR}/${interface_dir}":/input:ro \
@@ -107,3 +116,4 @@ run_docker_forward_pass "interf1"
 
 
 echo "=+= Save this image for uploading via ./do_save.sh"
+
